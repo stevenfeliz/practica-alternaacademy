@@ -8,6 +8,7 @@ on:
 jobs:
   sayHello:
     runs-on: ubuntu-latest
+    name: Say Hello
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
@@ -16,6 +17,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-      - name: Run Goodbye
-        run: echo Goodbye, world!
+    sayGoodbye:
+      runs-on: ubuntu-latest
+      name: Say Goodbye
+      steps:
+       - name: Run say goodbye
+         run: echo Goodbye, world! 
